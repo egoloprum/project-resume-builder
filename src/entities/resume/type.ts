@@ -2,9 +2,9 @@ export interface Resume {
   name: {
     firstName: string
     middleName: string
-    lastName: string
+    lastName: string | null
   }
-  gender: string
+  gender: 'male' | 'female'
   birthday: string
   telephone: string
   email: string

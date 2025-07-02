@@ -19,7 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${groteskSans.className} antialiased`}>{children}</body>
+      <body className={`${groteskSans.className} antialiased min-h-screen`}>
+        {children}
+      </body>
     </html>
   )
 }

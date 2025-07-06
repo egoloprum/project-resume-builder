@@ -32,6 +32,7 @@ const defaultSections: Section[] = [
 interface SectionStoreState {
   sections: Section[]
   updateSection: (id: number) => void
+  reorderSections: (newOrder: Section[]) => void
 }
 
 export const useSectionStore = create<SectionStoreState>()(set => ({
@@ -45,5 +46,6 @@ export const useSectionStore = create<SectionStoreState>()(set => ({
       )
       return { sections: updatedSections }
     })
-  }
+  },
+  reorderSections: newOrder => set({ sections: newOrder })
 }))

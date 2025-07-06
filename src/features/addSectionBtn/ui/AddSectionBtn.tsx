@@ -51,10 +51,7 @@ export const AddSectionBtn: FC<AddSectionBtnProps> = ({}) => {
       </Button>
 
       <div
-        className={`
-          overflow-hidden 
-          transition-all duration-300 ease-out
-          z-10
+        className={`overflow-hidden transition-all duration-300 ease-out z-10 absolute
           ${isOpen ? 'max-h-60 opacity-100 mt-2 pointer-events-auto' : 'max-h-0 opacity-0 mt-0 pointer-events-none'}
         `}>
         <ul className="border border-gray-200 rounded-xl bg-white w-48 shadow-lg">
